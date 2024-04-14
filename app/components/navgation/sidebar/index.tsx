@@ -31,7 +31,7 @@ const Sidebar = ({
           </svg>
         </button>
 
-        <ul className="sidebar-nav text-center leading-relaxed text-xl">
+        <ul className="sidebar-nav text-center leading-relaxed text-lg text-cyan-600">
           <li>
             <Link href="/principal_page " onClick={toggle}>
                   <p>Página principal</p>
