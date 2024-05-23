@@ -1,6 +1,6 @@
 'use client'
 import styled from "styled-components";
-import Navigation from "../components/navgation";
+import NavigationLogado from "../components/navigationLogado";
 import Rodape from "../components/rodape";
 import { Button } from "@nextui-org/react";
 
@@ -28,7 +28,7 @@ margin-right: auto;
 export default function CriarReceitas(){
     return(
         <>
-            <Navigation/>
+            <NavigationLogado/>
             <FundoPage>
                 <div>
                     <BotaoEstilizado type="button">Nova Receita</BotaoEstilizado>

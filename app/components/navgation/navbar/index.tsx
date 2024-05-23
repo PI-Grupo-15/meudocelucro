@@ -33,23 +33,6 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
         <div className="container mx-auto px-4 h-full">
           <div className="flex justify-between items-center h-full">
             <Logo />
-            {/* <button
-              type="button"
-              className="inline-flex items-center md:hidden"
-              onClick={toggle}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="40"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="#fff"
-                  d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"
-                />
-              </svg>
-            </button> */}
             <ListaEstilizada>
               <li>
                 <Link href="/principal_page">
@@ -59,16 +42,6 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
               <li>
                 <Link href="/about">
                   <TextoEstilizado>Sobre nós</TextoEstilizado>
-                </Link>
-              </li>
-              <li>
-                <Link href="/criar_receitas">
-                  <TextoEstilizado>Criar receitas</TextoEstilizado>
-                </Link>
-              </li>
-              <li>
-                <Link href="/ver_receitas">
-                  <TextoEstilizado>Ver Receitas</TextoEstilizado>
                 </Link>
               </li>
             </ListaEstilizada>

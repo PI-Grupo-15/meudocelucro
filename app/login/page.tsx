@@ -3,6 +3,7 @@
 import { useState } from "react";
 import CampoDigitacao from "../components/campoDigitacao";
 import styled from "styled-components";
+import { useRouter } from "next/navigation";
 
 const ContainerPrincipalLogin = styled.div`
 background-image: url(${"./images/Imagem_Fundo.png"});
@@ -72,6 +73,7 @@ align-items: center;
 export default function Login(){
     const[email, setEmail] = useState('');
     const[senha, setSenha] = useState('');
+    const router = useRouter();
     return(
         <>
         <ContainerPrincipalLogin>
@@ -94,7 +96,7 @@ export default function Login(){
                 onChange={setSenha}
                 label="Senha"/>
             </Formulario>
-            <BotaoCustomizado type="submit">Entrar</BotaoCustomizado>
+            <BotaoCustomizado type="submit" onClick={() => router.push('/principal_page_logado')}>Entrar</BotaoCustomizado>
             <Paragrafo>Esqueceu sua senha?</Paragrafo>
             <ParagrafoCadastro>Ainda não tem conta? <LinkEstilizado href="/cadastro">Faça seu Cadastro!</LinkEstilizado></ParagrafoCadastro>
             </ContainerLogin>

@@ -1,7 +1,7 @@
 'use client'
 import styled from "styled-components";
-import Navigation from "../components/navgation";
 import Rodape from "../components/rodape";
+import NavigationLogado from "../components/navigationLogado";
 
 const FundoPage = styled.div`
 background-image: url(${"./images/Imagem_Fundo_Principal.png"});
@@ -14,7 +14,7 @@ padding: 10em;
 export default function VerReceitas(){
     return(
         <>
-            <Navigation/>
+            <NavigationLogado/>
             <FundoPage></FundoPage>
             <Rodape/>
         </>
