@@ -34,7 +34,7 @@ const Sidebar = ({
         <ul className="sidebar-nav text-center leading-relaxed text-lg text-cyan-600">
           <li>
             <Link href="/principal_page " onClick={toggle}>
-                  <p>Página principal</p>
+                  <p>Home</p>
             </Link>
           </li>
           <li>
@@ -48,23 +48,8 @@ const Sidebar = ({
             </Link>
           </li>
           <li>
-            <Link href="/ingredientes " onClick={toggle}>
-                  <p>Ingredientes</p>
-            </Link>
-          </li>
-          <li>
-            <Link href="/ver_receitas " onClick={toggle}>
-                  <p>Ver receitas</p>
-            </Link>
-          </li>
-          <li>
-            <Link href="/services" onClick={toggle}>
-              <p>Serviços</p>
-            </Link>
-          </li>
-          <li>
-            <Link href="/contacts" onClick={toggle}>
-              <p>Contatos</p>
+            <Link href="/precificacao " onClick={toggle}>
+                  <p>Precificação</p>
             </Link>
           </li>
         </ul>

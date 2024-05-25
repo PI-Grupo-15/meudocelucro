@@ -39,7 +39,7 @@ const Logo = () => {
         <Image
           src="/images/logo.png"
           alt="Logo"
-          width={width < 1024 ? "110" : "100"}
+          width={width < 1024 ? "110" : "150"}
           height={width < 1024 ? "45" : "74"}
           className="relative"
         />

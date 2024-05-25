@@ -1,11 +1,10 @@
 'use client'
 
 import React, { useState } from "react";
-import Navigation from "../components/navgation";
 import Rodape from "../components/rodape";
 import styled from "styled-components";
-import CampoDigitacao from "../components/campoDigitacao";
 import DigitacaoConversor from "../components/digitacaoConversor";
+import NavigationLogado from "../components/navigationLogado";
 
 const FundoPage = styled.div`
 background-image: url(${"./images/Imagem_Fundo_Principal.png"});
@@ -73,17 +72,19 @@ align-items: center;
 margin-top: 2em;
 `
 
-const Principal_page = () => {
+
+const Principal_Page_Logado = () => {
   const[medidaInserida, setmedidaInserida] = useState("");
   const[medidaCalculada, setmedidaCalculada] = useState('');
   
   return (  
     <>
-      <Navigation/>
+      <NavigationLogado/>
         <FundoPage>
           <FundoConvesor>
             <TextoAzul>A plataforma Meu Doce Lucro é perfeita para confeiteiros que queiram calcular o preço de seus produtos de forma fácil e eficiente.
-               <TextoVermelho>Faça login e aproveite todas as funcionalidades da plataforma!</TextoVermelho></TextoAzul>
+               </TextoAzul>
+            <TextoVermelho>Faça login e aproveite todas as funcionalidades da plataforma!</TextoVermelho>
             <TextoConversor>Conversor de Medidas</TextoConversor>
             <ContainerConversor>
               <ContainerInput>
@@ -93,15 +94,14 @@ const Principal_page = () => {
                   placeholder="" 
                   onChange={setmedidaInserida} 
                   label="Quantidade: "/>
-
                   <DigitacaoConversor
                   valor={medidaCalculada} 
                   tipo="text"
                   placeholder="" 
                   onChange={setmedidaCalculada} 
                   label="Quantidade: "/>
-
                 </ContainerInput>
+
                 <ContainerSeletor>
                   <Seletor>
                     <option>gramas</option>
@@ -120,8 +120,7 @@ const Principal_page = () => {
                     <option>litros</option>
                   </Seletor>
                 </ContainerSeletor>
-              </ContainerConversor>
-            
+            </ContainerConversor>
           </FundoConvesor>
         </FundoPage>
       <Rodape/>
@@ -130,4 +129,4 @@ const Principal_page = () => {
   )
 };
 
-export default Principal_page;
+export default Principal_Page_Logado;
