@@ -46,8 +46,31 @@ padding: 3em 2em;
 text-decoration: underline overline;
 `
 const ContainerConversor = styled.div`
-display: block;
-margin-left: auto;
+display: flex;
+flex-direction: row;
+`
+const ContainerInput = styled.div`
+display: flex;
+flex-direction: column;
+width: 60%;
+`
+const ContainerSeletor = styled.div`
+display: flex;
+align-items: center;
+flex-direction: column;
+`
+const Seletor = styled.select`
+padding: 1em;
+background-color: #F0F0F0;
+box-sizing: border-box;
+box-shadow: 2px 2px 6px rgba(0,0,0,0.25);
+border-radius: 5px;
+border: none;
+color: #828282;
+font-family: Besley;
+width: 25%
+align-items: center;
+margin-top: 2em;
 `
 
 const Principal_page = () => {
@@ -63,19 +86,42 @@ const Principal_page = () => {
                <TextoVermelho>Faça login e aproveite todas as funcionalidades da plataforma!</TextoVermelho></TextoAzul>
             <TextoConversor>Conversor de Medidas</TextoConversor>
             <ContainerConversor>
-                <DigitacaoConversor
-                valor={medidaInserida} 
-                tipo="text"
-                placeholder="" 
-                onChange={setmedidaInserida} 
-                label="Quantidade: "/>
-                <DigitacaoConversor
-                valor={medidaCalculada} 
-                tipo="text"
-                placeholder="" 
-                onChange={setmedidaCalculada} 
-                label="Quantidade: "/>
-            </ContainerConversor>
+              <ContainerInput>
+                  <DigitacaoConversor
+                  valor={medidaInserida} 
+                  tipo="text"
+                  placeholder="" 
+                  onChange={setmedidaInserida} 
+                  label="Quantidade: "/>
+
+                  <DigitacaoConversor
+                  valor={medidaCalculada} 
+                  tipo="text"
+                  placeholder="" 
+                  onChange={setmedidaCalculada} 
+                  label="Quantidade: "/>
+
+                </ContainerInput>
+                <ContainerSeletor>
+                  <Seletor>
+                    <option>gramas</option>
+                    <option>colher de chá</option>
+                    <option>colher de sopa</option>
+                    <option>xícara</option>
+                    <option>mililitros</option>
+                    <option>litros</option>
+                  </Seletor>
+                  <Seletor>
+                    <option>gramas</option>
+                    <option>colher de chá</option>
+                    <option>colher de sopa</option>
+                    <option>xícara</option>
+                    <option>mililitros</option>
+                    <option>litros</option>
+                  </Seletor>
+                </ContainerSeletor>
+              </ContainerConversor>
+            
           </FundoConvesor>
         </FundoPage>
       <Rodape/>

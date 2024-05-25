@@ -10,13 +10,13 @@ interface Props{
 
 const Campo = styled.input`
 background: #F0F0F0;
-margin: 1em 1em 2em;
+margin: 10px;
 box-sizing: border-box;
 box-shadow: 2px 2px 6px rgba(0,0,0,0.25);
 border-radius: 8px;
 border: none;
 width: 100%;
-padding: 10px;
+padding: 15px;
 color: #828282;
 font-family: Besley;
 `
@@ -31,6 +31,8 @@ margin: 0 1em;
 `
 const Container= styled.div`
 width: 25%;
+margin-left: auto;
+margin-right: auto;
 `
 
 export default function DigitacaoConversor({valor, tipo, placeholder, onChange, label}: Props){
