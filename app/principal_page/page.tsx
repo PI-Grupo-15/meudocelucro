@@ -83,7 +83,8 @@ const Principal_page = () => {
         <FundoPage>
           <FundoConvesor>
             <TextoAzul>A plataforma Meu Doce Lucro é perfeita para confeiteiros que queiram calcular o preço de seus produtos de forma fácil e eficiente.
-               <TextoVermelho>Faça login e aproveite todas as funcionalidades da plataforma!</TextoVermelho></TextoAzul>
+            </TextoAzul>
+            <TextoVermelho>Faça login e aproveite todas as funcionalidades da plataforma!</TextoVermelho>
             <TextoConversor>Conversor de Medidas</TextoConversor>
             <ContainerConversor>
               <ContainerInput>

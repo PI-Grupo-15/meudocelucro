@@ -55,7 +55,7 @@ line-height: 19px;
 font-family: Besley;
 `
 
-export default function cadastro(){
+export default function Cadastro(){
     const[nome, setNome] = useState('');
     const[nascimento, setNascimento] = useState('');
     const[telefone, setTelefone] = useState('');
